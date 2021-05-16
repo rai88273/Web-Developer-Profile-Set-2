@@ -1,0 +1,222 @@
+body {
+    background-color: #191d28 !important;
+    padding-top: 15px;
+    font-family:'Oswald', sans-serif !important;
+    
+      
+}
+
+
+.brandPartOne {
+    color: #3dc6c1;
+    font-family: 'Roboto Mono', monospace !important;
+    font-weight: bold !important;
+    font-size: 45px !important;
+}
+
+.brandPartTwo {
+    color: white;
+    font-family: sans-serif !important;
+    font-size: 20px !important;
+}
+
+.navbar-brand {
+    font-size: x-large !important;
+}
+
+
+.cenNav {
+    background-color: #2e3241;
+    border-radius: 7px !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    margin-left: 14px;
+    color: white;
+    font-size: large !important;
+    
+}
+
+
+
+.centreNav {
+    /* margin-left: 22% !important; */
+    position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+    
+}
+
+.padside {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+}
+
+
+
+.pad {
+    padding-top: 15px;
+}
+
+.teleBtn {
+    background-color: #3dc6c1;
+    color: white;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    border-radius: 10px !important;
+    font-size: 20px !important;
+    
+
+}
+
+.fa-telegram {
+    color: white !important;
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #2e3241;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #3dc6c1;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2e3241;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2e3241;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .togBtn {
+      margin-left: 10px !important;
+  }
+
+  .circle {
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    padding: 6px;
+    background: #2e3241;
+    border: 3px solid #3dc6c1;
+    color: #3dc6c1;
+    text-align: center;
+    font: 15px Arial, sans-serif;
+    margin-right: 10px !important;
+  }
+
+  .tagcon {
+      margin-top: 15px !important;
+  }
+
+  .tagLineOne {
+      color: gray;
+      
+  }
+
+  .tagLineTwo {
+      color: #3dc6c1;
+      
+  }
+  
+  .tableDiv {
+      margin: 20px;
+  }
+
+  th h4 {
+      font-weight: bold !important;
+      color: #7b7d84 !important;
+      margin-bottom: 0 !important;
+      font-size: 20px !important;
+  }
+
+  td h4 {
+      color: white !important;
+      font-weight: bold;
+      font-size: 20px !important;
+  }
+
+  th {
+      text-align: center !important;
+      
+  }
+
+
+  tbody tr {
+    background-color: #2e3241;
+    
+  }
+
+  
+    table {
+        border-collapse: separate !important;
+        border-spacing: 0 1em !important;
+    }
+  
+
+  tbody tr td:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  tbody tr td:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  
+
+
+  th, td {
+       border: none !important;
+    }
+
+    .navbar {
+        min-height: 80px !important;
+    }

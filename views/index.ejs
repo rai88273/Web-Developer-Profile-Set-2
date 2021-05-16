@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Product list</title>
+
+    <link rel="stylesheet" type="text/css" href="/index.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <nav class="navbar mynav navbar-expand-lg">
+        <div class="container-fluid padside">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      
+              <span class="glyphicon glyphicon-menu-hamburger"></span>                        
+            </button>
+            <a class="navbar-brand" href="/index"><span class="brandPartOne">HODLINFO</span><span class="brandPartTwo">.com</span><h4 class="tagcon"><span class="tagLineOne">Powered By </span><span class="tagLineTwo">Finstreet</span></h4></a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar" >
+            
+
+            <div class="centreNav">
+                <ul class="nav navbar-nav pad">
+                    <li class="dropdown"><a class="dropdown-toggle cenNav" data-toggle="dropdown" href="#"> INR <span class="caret"></span></a>
+                        
+                    </li>
+                      
+                </ul>
+    
+                <ul class="nav navbar-nav pad">
+                    <li class="dropdown"><a class="dropdown-toggle cenNav" data-toggle="dropdown" href="#"> BTC <span class="caret"></span></a>
+                        
+                    </li>
+                      
+                </ul>
+            </div>
+
+            
+
+
+            <ul class="nav navbar-nav navbar-right pad">
+
+                <span class="circle">58</span>
+      
+                <button type="button" class="btn btn-xs teleBtn"><i class="fab fa-telegram-plane"></i>  Connect Telegram</button>
+
+                <span class="togBtn">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                      </label>
+                </span>
+      
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+    <div class="tableDiv">
+        <table class="table table-borderless text-center">
+
+            <thead>
+                <tr>
+                    <th><h4>#</h4></th>
+                    <th><h4>name</h4></th>
+                    <th><h4>Last</h4></th>
+                    <th><h4>Buy / Sell Price</h4></th>
+                    <th><h4>volume</h4></th>
+                    <th><h4>base_unit</h4></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                
+                <% var i = 0 %>
+                <% for (var key in data) {  i= i+1 %>
+                <tr>
+                    <td class="align-middle"><h4 class="table-text"><%- i %></h4></td>
+                    <td class="align-middle"><h4 class="table-text"><%- data[key].name %></h4></td>
+                    <td class="align-middle"><h4 class="table-text">₹ <%- data[key].last %></h4></td>
+                    <td class="align-middle"><h4 class="table-text">₹ <%- data[key].buy %> / <%-data[key].sell %></h4></td>
+                    <td class="align-middle"><h4 class="table-text"><%- data[key].volume %></h4></td>
+                    <td class="align-middle"><h4 class="table-text"><%- data[key].base_unit %></h4></td>
+                </tr>
+
+                <% if(i == 10) { %>
+                
+                <% break; %>
+
+                <% }} %>
+
+
+                
+
+            </tbody>
+    
+        </table> 
+    </div>    
+
+    
+
+</body>
+</html>
